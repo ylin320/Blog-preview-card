@@ -1,0 +1,142 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+  --300: 24px;
+  --150: 12px;
+  --100: 8px;
+  --50: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Yellow);
+  padding: 24px;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.card {
+  max-width: 23rem;
+  border-radius: 20px;
+  border: 1px solid var(--Gray950, #111111);
+  padding: 16px;
+  gap: 16px;
+  box-shadow: 8px 8px 0px 0px #000000;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--White);
+}
+
+.blog-image {
+  border-radius: 10px;
+  height: auto;
+  max-width: 100%;
+  background: var(--Yellow);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--150);
+}
+
+.category {
+  width: 82px;
+  height: 29px;
+  border-radius: 4px;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0%;
+  color: var(--Gray950);
+  cursor: pointer;
+
+  gap: var(--100);
+  padding-top: var(--50);
+  padding-right: var(--150);
+  padding-bottom: var(--50);
+  padding-left: var(--150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Yellow);
+}
+
+.publish-date {
+  font-weight: 500;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  line-height: 1.5;
+  letter-spacing: 0%;
+  color: var(--Gray950);
+}
+
+.title {
+  font-weight: 800;
+  /* font-size: 1.5rem; */
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.5;
+  letter-spacing: 0%;
+  cursor: pointer;
+  color: var(--Gray950);
+  transition: 100ms;
+}
+
+.title:hover,
+.title:active,
+.title:focus {
+  color: var(--Yellow);
+}
+
+.description {
+  font-weight: 500;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.5;
+  letter-spacing: 0%;
+  color: var(--Gray500);
+}
+
+.author {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: var(--150);
+  cursor: pointer;
+}
+
+.userpic {
+  width: 2rem;
+  height: 2rem;
+}
+
+.author-name {
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--Gray950);
+}
