@@ -73,7 +73,6 @@ video {
   font-size: clamp(0.75rem, 2vw, 0.875rem);
   font-weight: 800;
   line-height: 1.5;
-  letter-spacing: 0%;
   color: var(--Gray950);
   cursor: pointer;
 
@@ -92,16 +91,13 @@ video {
   font-weight: 500;
   font-size: clamp(0.75rem, 2vw, 0.875rem);
   line-height: 1.5;
-  letter-spacing: 0%;
   color: var(--Gray950);
 }
 
 .title {
   font-weight: 800;
-  /* font-size: 1.5rem; */
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   line-height: 1.5;
-  letter-spacing: 0%;
   cursor: pointer;
   color: var(--Gray950);
   transition: 100ms;
@@ -117,7 +113,6 @@ video {
   font-weight: 500;
   font-size: clamp(0.875rem, 2vw, 1rem);
   line-height: 1.5;
-  letter-spacing: 0%;
   color: var(--Gray500);
 }
 
